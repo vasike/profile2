@@ -58,42 +58,42 @@ class ProfileType extends ConfigEntityBase implements ProfileTypeInterface {
    *
    * @var integer
    */
-  public $id;
+  protected $id;
 
   /**
    * The universally unique identifier of the profile type.
    *
    * @var string
    */
-  public $uuid;
+  protected $uuid;
 
   /**
    * The human-readable name of the profile type.
    *
    * @var string
    */
-  public $label;
+  protected $label;
 
   /**
    * Whether the profile type is shown during registration.
    *
    * @var boolean
    */
-  public $registration = FALSE;
+  protected $registration = FALSE;
 
   /**
    * Whether the profile type allows multiple profiles.
    *
    * @var boolean
    */
-  public $multiple = FALSE;
+  protected $multiple = FALSE;
 
   /**
    * The weight of the profile type compared to others.
    *
    * @var integer
    */
-  public $weight = 0;
+  protected $weight = 0;
 
   /**
    * {@inheritdoc}
