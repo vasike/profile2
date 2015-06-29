@@ -119,8 +119,24 @@ class ProfileType extends ConfigEntityBase implements ProfileTypeInterface {
   /**
    * {@inheritdoc}
    */
+  public function setRegistration($registration) {
+    $this->registration = $registration;
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function getMultiple() {
     return $this->multiple;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setMultiple($multiple) {
+    $this->multiple = $multiple;
+    return $this;
   }
 
 }
